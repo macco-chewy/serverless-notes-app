@@ -97,7 +97,9 @@ export async function invokeApig({
     throw new Error("User is not logged in");
   }
 
-  const signedRequest = sigV4Client
+  headers['x-api-key'] = config.apiGateway.KEY;
+
+  let signedRequest = sigV4Client
     .newClient({
       accessKey: AWS.config.credentials.accessKeyId,
       secretKey: AWS.config.credentials.secretAccessKey,

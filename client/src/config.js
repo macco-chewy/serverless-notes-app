@@ -9,6 +9,7 @@ export default {
   apiGateway: {
     URL: "https://a9v51wy31g.execute-api.us-west-2.amazonaws.com/prod",
     REGION: "us-west-2",
+    KEY: "opDXrbpF2z8yViSnuxmso1DgmUFDwuDq3joJ57iD"
   },
   s3: {
     BUCKET: "zs-notes-app-uploads",
